@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "test": "jest",
+    "pm2": "pm2 start"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +17,12 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
+    "helmet": "^5.1.0",
     "mongoose": "^6.3.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   }
 }

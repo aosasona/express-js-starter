@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const helmet = require("helmet");
 require("dotenv").config();
 require("./config/db").connect();
 
@@ -9,6 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+if (process.env.NODE_ENV === "production") {
+  app.use(helmet());
+}
 
 //DEFAULT ROUTES
 app.use("/", (req, res) => {
@@ -16,7 +20,7 @@ app.use("/", (req, res) => {
 });
 
 //IMPORT CUSTOM ROUTES
-const dummyRoutes = require("./routes/dummyRoutes");
+const dummyRoutes = require("./routes/dummy.routes");
 
 //USE CUSTOM ROUTES
 app.use("/", dummyRoutes);
