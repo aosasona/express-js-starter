@@ -12,3 +12,9 @@ exports.connect = () => {
     })
     .catch((err) => console.error(err));
 };
+
+exports.disconnect = () => {
+  mongoose.disconnect().then(() => {
+    console.log("MongoDB Disconnected");
+  });
+};
