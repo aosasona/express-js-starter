@@ -15,7 +15,7 @@ const dummyController = asyncHandler(async (req, res) => {
     // );
     throw new CustomError("Testing error", 400);
   } catch (error) {
-    return new CustomResponse(res).error(
+    return new CustomResponse(res, error).error(
       "Something went wrong man",
       {
         message: error.message,
