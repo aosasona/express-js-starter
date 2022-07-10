@@ -996,7 +996,7 @@ caniuse-lite@^1.0.30001349:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001352.tgz#cc6f5da3f983979ad1e2cdbae0505dccaa7c6a12"
   integrity sha512-GUgH8w6YergqPQDGWhJGt8GDRnY0L/iJVQcU3eJ46GYf52R8tk0Wxp0PymuFVZboJYXGiCqwozAYZNRjVj6IcA==
 
-chalk@^2.0.0:
+chalk@^2.0.0, chalk@^2.0.1:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -2978,6 +2978,13 @@ saslprep@^1.0.3:
   integrity sha512-/MY/PEMbk2SuY5sScONwhUDsV2p77Znkb/q3nSVstq/yQzYJOH/Azh29p9oJLsl3LnQwSvZDKagDGBsBwSooag==
   dependencies:
     sparse-bitfield "^3.0.3"
+
+scrawny@^0.1.15:
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/scrawny/-/scrawny-0.1.15.tgz#7ce51a9084ee32e8b549ac596c4f57d61e966592"
+  integrity sha512-rKp70hnfwPvH5ImCxbvAfAnqUb/zhPw6BVijJub211LotDFWhcv4LpY4DBi/O5sv5kWgCCDxmFCJgfzCoz/Oow==
+  dependencies:
+    chalk "^2.0.1"
 
 semver-diff@^3.1.1:
   version "3.1.1"

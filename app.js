@@ -5,6 +5,7 @@ const helmet = require("helmet");
 const cors = require("cors");
 const hpp = require("hpp");
 const toobusy_js = require("toobusy-js");
+const { default: scrawny } = require("scrawny");
 const app = express();
 
 //APP MIDDLE-WARES
@@ -17,6 +18,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(hpp());
 app.disable("x-powered-by");
+app.use(
+  scrawny({
+    log: true,
+  })
+);
 
 //APP ROUTES - IMPORT
 const routes = require("./routes");
